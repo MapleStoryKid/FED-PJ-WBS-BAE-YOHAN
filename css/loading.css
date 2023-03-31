@@ -1,0 +1,63 @@
+
+  .loading-wrap {
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 9999999;
+    height: 100%;
+    width: 100%;
+    animation: introDisappear 3.3s ease-in-out forwards;
+  }
+
+
+  body{
+    background-color: #000;
+}
+.imgAni{
+    width: 560px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introPic{
+
+  background-image: url(../images/loading-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 560px;
+  height:315px;
+  animation: spani2 2.7s steps(34) forwards;
+}
+  
+  @keyframes spani2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -10710px;
+    }
+
+
+  }
+
+
+  @keyframes introDisappear {
+    40% {
+      opacity: 1;
+    }
+
+    100% {
+       opacity: 0;
+       visibility: hidden;
+    }
+
+
+  }
