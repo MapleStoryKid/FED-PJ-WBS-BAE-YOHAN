@@ -966,6 +966,9 @@ footer{
 
 
 @media screen and (max-width: 780px){
+  .loading-wrap{
+    display: none;
+  }
 
   .introPic{
 
